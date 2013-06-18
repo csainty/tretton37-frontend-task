@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<link rel="stylesheet" href="style.css"/>
+		<link rel="stylesheet" href="plugin.css"/>
+	</head>
+	<body>
+		<form action="" id="the-form">
+			<div class="formlet">
+				<label for="car-brands">Brands</label><br>
+				<select name="brand" id="car-brands">
+					<option value="audi">Audi</option>
+					<option value="ford">Ford</option>
+					<option value="jeep">Jeep</option>
+					<option value="opel">Opel</option>
+					<option value="saab">Saab</option>
+				</select>
+				<div id="result-brand"></div>
+			</div>
+			<div class="formlet">
+				<label for="car-features">Features</label><br>
+				<select name="features" id="car-features" multiple>
+					<option value="blinkers">Blinkers</option>
+					<option value="bromsar">Bromsar</option>
+					<option value="hjul">Hjul</option>
+					<option value="ratt">Ratt</option>
+					<option value="vindrutetorkare">Vindrutetorkare</option>
+				</select>
+				<div id="result-features"></div>
+			</div>
+		</form>
+		<script src="jquery-2.0.2.js"></script>
+		<script src="plugin.js"></script>
+		<script src="main.js"></script>
+	</body>
+</html>
