@@ -4,6 +4,10 @@ $( function () {
 			value;
 
 		if ( origin === this ) {
+			$( 'select' ).each( function() {
+				$( '#result-' + this.name ).text( $( this ).val() || '' );
+			} );
+
 			return;
 		}
 
@@ -18,7 +22,7 @@ $( function () {
 		}
 
 		$( '#result-' + origin.name ).text( value );
-	} );
+	} ).trigger( 'change' );
 
 	if ( $.fn[pluginName] && typeof $.fn[pluginName] == 'function' ) {
 		$( 'select' )[pluginName]();
